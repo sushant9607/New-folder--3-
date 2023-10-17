@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - Index</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background-color: aqua;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: violet;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+
+        .aboutus {
+            display: flex;
+        }
+
+        .imgs {
+            flex: 25;
+            margin: 5px;
+        }
+
+        .services {
+            display: flex;
+        }
+
+        .service {
+            flex: 50;
+            background-color: tan;
+            margin: 5px;
+        }
+
+        .gallery {
+            display: flex;
+        }
+
+        .video {
+            flex: 50;
+            margin: 5px;
+        }
+
+        .contactus {
+            display: flex;
+        }
+
+        .map {
+            flex: 50%;
+            margin: 5px;
+        }
+
+        .forms {
+            flex: 50;
+            margin: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width:700px) {
+
+            .aboutus,
+            .gallery,
+            .contactus,
+            .services {
+                flex-direction: column;
+            }
+
+            li {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Website Name</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#mainabout">About</a></li>
+            <li><a href="#mainservices">Serivces</a></li>
+            <li><a href="#maingallery">Gallery</a></li>
+            <li><a href="#maincontact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="aboutus">
+        <img src="assets/images/download.jpg" width="100%" alt="">
+    </div>
+    <section id="mainabout">
+        <h1 style="text-align: center;">About Us</h1>
+        <div class="aboutus">
+            <div class="imgs">
+                <img src="assets/images/ambassador2.jpg" width="100%" height="300" alt="">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/ambassador2.jpg" width="100%" height="300" alt="">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/ambassador2.jpg" width="100%" height="300" alt="">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/ambassador2.jpg" width="100%" height="300" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="mainservices">
+        <h1 style="text-align: center;">Services</h1>
+        <div class="services">
+            <div class="service">
+                <h3 style="text-align: center;">Web Development</h3>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore
+                    repellendus nemo asperiores deserunt quam aliquid qui doloremque nisi vero laboriosam aspernatur,
+                    quaerat voluptatibus non, blanditiis quis quas sunt minus!</p>
+            </div>
+            <div class="service">
+                <h3 style="text-align: center;">Application Development</h3>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore
+                    repellendus nemo asperiores deserunt quam aliquid qui doloremque nisi vero laboriosam aspernatur,
+                    quaerat voluptatibus non, blanditiis quis quas sunt minus!</p>
+            </div>
+            <div class="service">
+                <h3 style="text-align: center;">Digital Marketing</h3>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore
+                    repellendus nemo asperiores deserunt quam aliquid qui doloremque nisi vero laboriosam aspernatur,
+                    quaerat voluptatibus non, blanditiis quis quas sunt minus!</p>
+            </div>
+            <div class="service">
+                <h3 style="text-align: center;">Web Designing</h3>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore
+                    repellendus nemo asperiores deserunt quam aliquid qui doloremque nisi vero laboriosam aspernatur,
+                    quaerat voluptatibus non, blanditiis quis quas sunt minus!</p>
+            </div>
+        </div>
+    </section>
+    <section id="maingallery">
+        <h1 style="text-align: center;">Gallery</h1>
+        <div class="gallery">
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/t0Q2otsqC4I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_tZFByeaxA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="maincontact">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <div class="contactus">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15286.989574045778!2d74.25313499999999!3d16.6895195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10024275c2011%3A0x9a3a2800025129dc!2sShivaji%20University%20Athletics%20Stadium!5e0!3m2!1sen!2sin!4v1691041953167!5m2!1sen!2sin"
+                    width="100%" height="315" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="forms">
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4 style="text-align: center;"> Designed & Developed by ,,,</h4>
+    </footer>
+</body>
+
+</html>
